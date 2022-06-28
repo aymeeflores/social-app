@@ -13,7 +13,7 @@ function Profilecard() {
 					<img src={Profilepic} className="max-w-sm  rounded-2xl m-4  " alt="profile pic " />
 
 					<div>
-						<div className="border-t border-gray-200">
+						<div className="border-t border-gray-200 mt-20 sm:mt-10">
 							<dl>
 								<div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 									<dt className="text-sm font-medium text-gray-500">Full name</dt>
