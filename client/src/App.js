@@ -1,14 +1,18 @@
 import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Profileview from "./pages/Profileview/Profileview";
+import Home from "./pages/Home/Home";
 function App() {
 	return (
-		<div>
+		<BrowserRouter>
 			<Navbar />
-			<Profileview />
-		</div>
+			<Routes>
+				<Route path="/" exact component={Home} />
+				<Route path="/profileview" component={Profileview} />
+			</Routes>
+		</BrowserRouter>
 	);
 }
 
